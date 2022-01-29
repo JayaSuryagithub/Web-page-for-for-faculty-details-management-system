@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Read page</title>
+        <style>
+            html{
+                background-color: skyblue;
+            }
+            h1{
+                color: rgb(5, 80, 28);
+                text-align: center;
+                padding-top: 100px;
+
+            }
+                            /* Style inputs with type="text", select elements and textareas */
+                input[type=text], select, textarea,.date {
+                width: 50%; /* Full width */
+                padding: 12px; /* Some padding */ 
+                border: 1px solid #ccc; /* Gray border */
+                border-radius: 4px; /* Rounded borders */
+                box-sizing: border-box; /* Make sure that padding and width stays in place */
+                margin-top: 6px; /* Add a top margin */
+                margin-bottom: 16px; /* Bottom margin */
+                resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+                }
+
+                /* Style the submit button with a specific background color etc */
+                input[type=submit] {
+                background-color: #04AA6D;
+                color: white;
+                padding: 12px 25px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                position: absolute;
+                right: 50%;
+                width: 100px;
+                }
+
+                /* When moving the mouse over the submit button, add a darker green color */
+                input[type=submit]:hover {
+                background-color: #9a9e9a;
+                }
+
+                /* Add a background color and some padding around the form */
+                .container {
+                border-radius: 5px;
+                padding: 25px;
+                width: 50%; 
+                margin-left: 30%;
+                margin-top: 7%;
+                }
+                .pos{
+                    text-align: center;
+                }
+                label{
+                    text-align: right;
+                }
+        </style>
+    </head>
+    <body>
+        <h1> To read profile  enter your id and date of birth </h1>
+        <div class="container">
+            <form action="view.php" method="post">
+          
+              <label for="Lecturer ID">Lecturer ID :</label>
+              <input type="text" id="Enter Your ID" name="LecturerID" placeholder="Enter Your Id ">
+              <br/>
+              <label for="Date of Birth">Data of Birth</label>
+              <input class="date" type="date" name="dateofbirth" value="DD-MM-YYYY">
+
+              <br/>
+              <div class="pos">
+                <input type="submit" value="submit" name="submit">
+              </div>
+          
+            </form>
+          </div>
+    </body>
+</html>
